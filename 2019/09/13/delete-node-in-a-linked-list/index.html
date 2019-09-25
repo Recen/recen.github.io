@@ -79,13 +79,17 @@
 
 
 
-<meta property="og:type" content="website">
-<meta property="og:title" content="ad">
-<meta property="og:url" content="http://yoursite.com/index.html">
+<meta name="description" content="https://leetcode-cn.com/problems/delete-node-in-a-linked-list/ 删除链表中的节点，最简单的办法，把当前的节点替换成他的下一个节点 12345678910111213141516/** * Definition for singly-linked list. * public class ListNode &amp;#123; *     int">
+<meta property="og:type" content="article">
+<meta property="og:title" content="删除链表中的节点">
+<meta property="og:url" content="http://yoursite.com/2019/09/13/delete-node-in-a-linked-list/index.html">
 <meta property="og:site_name" content="ad">
+<meta property="og:description" content="https://leetcode-cn.com/problems/delete-node-in-a-linked-list/ 删除链表中的节点，最简单的办法，把当前的节点替换成他的下一个节点 12345678910111213141516/** * Definition for singly-linked list. * public class ListNode &amp;#123; *     int">
 <meta property="og:locale" content="en">
+<meta property="og:updated_time" content="2019-09-25T15:59:40.431Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="ad">
+<meta name="twitter:title" content="删除链表中的节点">
+<meta name="twitter:description" content="https://leetcode-cn.com/problems/delete-node-in-a-linked-list/ 删除链表中的节点，最简单的办法，把当前的节点替换成他的下一个节点 12345678910111213141516/** * Definition for singly-linked list. * public class ListNode &amp;#123; *     int">
 
 
 
@@ -115,13 +119,13 @@
 
 
 
-  <link rel="canonical" href="http://yoursite.com/">
+  <link rel="canonical" href="http://yoursite.com/2019/09/13/delete-node-in-a-linked-list/">
 
 
 
 
 
-  <title>ad</title>
+  <title>删除链表中的节点 | ad</title>
   
 
 
@@ -140,8 +144,7 @@
     
   
 
-  <div class="container sidebar-position-left 
-  page-home">
+  <div class="container sidebar-position-left page-post-detail">
     <div class="headband"></div>
 
     <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
@@ -214,9 +217,9 @@
         <div class="content-wrap">
           <div id="content" class="content">
             
-  <section id="posts" class="posts-expand">
+
+  <div id="posts" class="posts-expand">
     
-      
 
   
 
@@ -246,9 +249,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2019/09/13/delete-node-in-a-linked-list/" itemprop="url">删除链表中的节点</a></h1>
+          <h1 class="post-title" itemprop="name headline">删除链表中的节点</h1>
         
 
         <div class="post-meta">
@@ -298,16 +299,12 @@
       
 
       
-        
-          
-            <p><a href="https://leetcode-cn.com/problems/delete-node-in-a-linked-list/" target="_blank" rel="noopener">https://leetcode-cn.com/problems/delete-node-in-a-linked-list/</a></p>
+        <p><a href="https://leetcode-cn.com/problems/delete-node-in-a-linked-list/" target="_blank" rel="noopener">https://leetcode-cn.com/problems/delete-node-in-a-linked-list/</a></p>
 <p>删除链表中的节点，最简单的办法，把当前的节点替换成他的下一个节点</p>
 <figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">/**</span></span><br><span class="line"><span class="comment"> * Definition for singly-linked list.</span></span><br><span class="line"><span class="comment"> * public class ListNode &#123;</span></span><br><span class="line"><span class="comment"> *     int val;</span></span><br><span class="line"><span class="comment"> *     ListNode next;</span></span><br><span class="line"><span class="comment"> *     ListNode(int x) &#123; val = x; &#125;</span></span><br><span class="line"><span class="comment"> * &#125;</span></span><br><span class="line"><span class="comment"> */</span></span><br><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Solution</span> </span>&#123;</span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">deleteNode</span><span class="params">(ListNode node)</span> </span>&#123;</span><br><span class="line">        <span class="comment">//当前节点的值修改为下个节点的值</span></span><br><span class="line">        node.val = node.next.val;</span><br><span class="line">        <span class="comment">//当前节点的下个节点修改为下个节点的下个节点</span></span><br><span class="line">        node.next = node.next.next;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 
 <p>这样就把这个节点从当前的链表中删除了</p>
 
-          
-        
       
     </div>
     
@@ -324,12 +321,12 @@
       
 
       
+      
+      
 
       
 
       
-      
-        <div class="post-eof"></div>
       
     </footer>
   </div>
@@ -339,10 +336,11 @@
   </article>
 
 
-    
-  </section>
 
-  
+    <div class="post-spread">
+      
+    </div>
+  </div>
 
 
           </div>
@@ -350,6 +348,10 @@
 
 
           
+
+  
+
+
 
         </div>
         
@@ -546,6 +548,10 @@
   
 
   
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.4"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.1.4"></script>
+
+
 
   
 
