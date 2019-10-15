@@ -79,18 +79,18 @@
 
 
 
-<meta name="description" content="一次握手需要经过四个阶段  客户端请求 服务器回应 客户端回应 服务器最后回应  客户端与服务端两个来回的通信。 ####客户端请求ClinetHello向服务端发送加密通信的请求，请求信息包含了  客户端支持的加密协议版本 客户端支持的加密算法 客户端支持的压缩方法 一个客户端生成的随机数Random1，用于生成“秘钥 ”  ####服务端回应ServerHello服务端收到请求之后，给客户端回">
+<meta name="description" content="一次握手需要经过四个阶段  客户端请求 服务器回应 客户端回应 服务器最后回应  客户端与服务端两个来回的通信。 客户端请求ClinetHello向服务端发送加密通信的请求，请求信息包含了  客户端支持的加密协议版本 客户端支持的加密算法 客户端支持的压缩方法 一个客户端生成的随机数Random1，用于生成“秘钥 ”  服务端回应ServerHello服务端收到请求之后，给客户端回应，回应的信息包">
 <meta name="keywords" content="Network，Https">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Https 加密握手过程">
 <meta property="og:url" content="http://yoursite.com/2019/10/15/network-https-handshake/index.html">
 <meta property="og:site_name" content="adRecen">
-<meta property="og:description" content="一次握手需要经过四个阶段  客户端请求 服务器回应 客户端回应 服务器最后回应  客户端与服务端两个来回的通信。 ####客户端请求ClinetHello向服务端发送加密通信的请求，请求信息包含了  客户端支持的加密协议版本 客户端支持的加密算法 客户端支持的压缩方法 一个客户端生成的随机数Random1，用于生成“秘钥 ”  ####服务端回应ServerHello服务端收到请求之后，给客户端回">
+<meta property="og:description" content="一次握手需要经过四个阶段  客户端请求 服务器回应 客户端回应 服务器最后回应  客户端与服务端两个来回的通信。 客户端请求ClinetHello向服务端发送加密通信的请求，请求信息包含了  客户端支持的加密协议版本 客户端支持的加密算法 客户端支持的压缩方法 一个客户端生成的随机数Random1，用于生成“秘钥 ”  服务端回应ServerHello服务端收到请求之后，给客户端回应，回应的信息包">
 <meta property="og:locale" content="en">
-<meta property="og:updated_time" content="2019-10-15T15:07:58.078Z">
+<meta property="og:updated_time" content="2019-10-15T15:10:40.621Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Https 加密握手过程">
-<meta name="twitter:description" content="一次握手需要经过四个阶段  客户端请求 服务器回应 客户端回应 服务器最后回应  客户端与服务端两个来回的通信。 ####客户端请求ClinetHello向服务端发送加密通信的请求，请求信息包含了  客户端支持的加密协议版本 客户端支持的加密算法 客户端支持的压缩方法 一个客户端生成的随机数Random1，用于生成“秘钥 ”  ####服务端回应ServerHello服务端收到请求之后，给客户端回">
+<meta name="twitter:description" content="一次握手需要经过四个阶段  客户端请求 服务器回应 客户端回应 服务器最后回应  客户端与服务端两个来回的通信。 客户端请求ClinetHello向服务端发送加密通信的请求，请求信息包含了  客户端支持的加密协议版本 客户端支持的加密算法 客户端支持的压缩方法 一个客户端生成的随机数Random1，用于生成“秘钥 ”  服务端回应ServerHello服务端收到请求之后，给客户端回应，回应的信息包">
 
 
 
@@ -313,21 +313,21 @@
 <li>服务器最后回应</li>
 </ol>
 <p>客户端与服务端两个来回的通信。</p>
-<p>####客户端请求ClinetHello<br>向服务端发送加密通信的请求，请求信息包含了</p>
+<h4 id="客户端请求ClinetHello"><a href="#客户端请求ClinetHello" class="headerlink" title="客户端请求ClinetHello"></a>客户端请求ClinetHello</h4><p>向服务端发送加密通信的请求，请求信息包含了</p>
 <ul>
 <li>客户端支持的加密协议版本</li>
 <li>客户端支持的加密算法</li>
 <li>客户端支持的压缩方法</li>
 <li>一个客户端生成的随机数Random1，用于生成“秘钥 ”</li>
 </ul>
-<p>####服务端回应ServerHello<br>服务端收到请求之后，给客户端回应，回应的信息包括了：</p>
+<h4 id="服务端回应ServerHello"><a href="#服务端回应ServerHello" class="headerlink" title="服务端回应ServerHello"></a>服务端回应ServerHello</h4><p>服务端收到请求之后，给客户端回应，回应的信息包括了：</p>
 <ul>
 <li>确认的加密协议版本</li>
 <li>确认的加密算法</li>
 <li>服务器证书</li>
 <li>一个服务器生成的随机数Random2，用于生成秘钥“”</li>
 </ul>
-<p>####客户端回应<br>客户端收到回应信息之后，会做以下事情：</p>
+<h4 id="客户端回应"><a href="#客户端回应" class="headerlink" title="客户端回应"></a>客户端回应</h4><p>客户端收到回应信息之后，会做以下事情：</p>
 <ul>
 <li>验证证书。如果证书不是可信机构颁布，或者证书中域名与实际域名不一致，或证书过去，会像访问者发出警告，由其选择是否继续通信。</li>
 </ul>
@@ -337,7 +337,7 @@
 <li>编码改变通知，表示随后信息都讲使用双方商定的加密方法和秘钥发送</li>
 <li>客户端握手结束通知。这一项也是前面发送的所有内容的hash值，用来给服务端校验</li>
 </ul>
-<p>####服务端回应<br>服务端收到客户端的Random3之后，生成本次会话的秘钥，并向客户端发送信息：<br>1.编码改变通知。<br>2.服务端握手结束通知，这一项也是前面发送的所有内容的hash值，用来给客户端校验。</p>
+<h4 id="服务端回应"><a href="#服务端回应" class="headerlink" title="服务端回应"></a>服务端回应</h4><p>服务端收到客户端的Random3之后，生成本次会话的秘钥，并向客户端发送信息：<br>1.编码改变通知。<br>2.服务端握手结束通知，这一项也是前面发送的所有内容的hash值，用来给客户端校验。</p>
 <p>整个握手阶段结束，接下来客户端和服务端的通信就进入加密，完全使用普通的http协议，内容使用 秘钥加密。</p>
 <blockquote>
 <p><strong>为什么要使用三个秘钥来加密？</strong><br>一句话来说就是，需要增加随机性来保证session key的安全性</p>
@@ -432,8 +432,17 @@
       
 
       
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            Table of Contents
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            Overview
+          </li>
+        </ul>
+      
 
-      <section class="site-overview-wrap sidebar-panel sidebar-panel-active">
+      <section class="site-overview-wrap sidebar-panel">
         <div class="site-overview">
           <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
             
@@ -484,6 +493,22 @@
         </div>
       </section>
 
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-4"><a class="nav-link" href="#客户端请求ClinetHello"><span class="nav-number">1.</span> <span class="nav-text">客户端请求ClinetHello</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#服务端回应ServerHello"><span class="nav-number">2.</span> <span class="nav-text">服务端回应ServerHello</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#客户端回应"><span class="nav-number">3.</span> <span class="nav-text">客户端回应</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#服务端回应"><span class="nav-number">4.</span> <span class="nav-text">服务端回应</span></a></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
       
 
       
